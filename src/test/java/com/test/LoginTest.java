@@ -53,7 +53,6 @@ public class LoginTest extends BaseClass {
       loginPom.setInputPassword(value);
       loginPom.loginButtonClick();
       getDataFromExcel();
-      
     }
     public void getDataFromExcel() throws IOException {
     	Utility utility = new Utility();
@@ -64,6 +63,5 @@ public class LoginTest extends BaseClass {
     //String key=	(String) utility.getSingleData(1, 0, sh);
     //String value=(String) utility.getSingleData(1, 1, sh);
     
-    		
     }
 }

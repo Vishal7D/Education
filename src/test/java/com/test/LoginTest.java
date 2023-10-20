@@ -15,17 +15,15 @@ import com.utility.Utility;
 public class LoginTest extends BaseClass {
 
 	@BeforeMethod
- public void setUp() {
-		
+ public void setUp() {	
 	 try {
 		launchTheWeb();
 	} catch (FileNotFoundException e) {
 		// TODO Auto-generated catch block
 		e.printStackTrace();
 	}
-	
  }
-	//@AfterMethod
+	@AfterMethod
  public void tearDown() {
 	 driver.quit();
  }

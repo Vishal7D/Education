@@ -10,24 +10,31 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class BaseClass {
+	
   public static WebDriver driver;
+  public static Properties prop;
   FileInputStream file;
-   public static String projectPath = System.getProperty("user.dir");
-  public void launchTheWeb() throws FileNotFoundException {
-	  file = new FileInputStream(projectPath+"\\src\\main\\resources\\com\\Property\\config.properties");
-	  Properties properties=new Properties();
+     public static String projectPath = System.getProperty("user.dir");
+     
+     public void setUp()  {
 	  try {
-		properties.load(file);
+		file = new FileInputStream(projectPath+"\\src\\main\\resources\\com\\Property\\config.properties");
+	} catch (FileNotFoundException e) {
+		
+	
+	  prop=new Properties();
+	  try {
+	  prop.load(file);
 	} catch (IOException e) {
-		// TODO Auto-generated catch block
+
 		e.printStackTrace();
 	}
 	  driver = new ChromeDriver();
 	  driver.manage().window().maximize();
 	  
-	  properties.getProperty("weburl");
+	  prop.getProperty("weburl");
 	 
-	  driver.get(properties.getProperty("weburl"));
+	  driver.get(prop.getProperty("weburl"));
 	  driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
   }
   }

@@ -1,17 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results total="1" passed="1" failed="0" skipped="0">
+<testng-results total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-10-19T10:52:57Z" name="Default suite" finished-at="2023-10-19T10:53:09Z" duration-ms="11960">
+  <suite started-at="2023-12-28T04:55:48Z" name="Default suite" finished-at="2023-12-28T04:56:08Z" duration-ms="20021">
     <groups>
     </groups>
-    <test started-at="2023-10-19T10:52:57Z" name="Default test" finished-at="2023-10-19T10:53:09Z" duration-ms="11960">
+    <test started-at="2023-12-28T04:55:48Z" name="Default test" finished-at="2023-12-28T04:56:08Z" duration-ms="20021">
       <class name="com.test.LoginTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.test.LoginTest@2a8448fa]" started-at="2023-10-19T16:22:57Z" name="setUp" finished-at="2023-10-19T16:23:08Z" duration-ms="10651" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.test.LoginTest@5b799640]" started-at="2023-12-28T10:25:48Z" name="setUp" finished-at="2023-12-28T10:25:58Z" duration-ms="10397" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testUsers()[pri:0, instance:com.test.LoginTest@2a8448fa]" started-at="2023-10-19T16:23:08Z" name="testUsers" finished-at="2023-10-19T16:23:09Z" duration-ms="1286" status="PASS">
+        <test-method signature="loginTest()[pri:0, instance:com.test.LoginTest@5b799640]" started-at="2023-12-28T10:25:58Z" name="loginTest" finished-at="2023-12-28T10:25:59Z" duration-ms="1074" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.test.LoginTest@5b799640]" started-at="2023-12-28T10:25:59Z" name="setUp" finished-at="2023-12-28T10:26:07Z" duration-ms="7319" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testUsers()[pri:0, instance:com.test.LoginTest@5b799640]" started-at="2023-12-28T10:26:07Z" name="testUsers" finished-at="2023-12-28T10:26:08Z" duration-ms="1203" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testUsers -->

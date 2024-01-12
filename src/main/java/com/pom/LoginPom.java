@@ -6,8 +6,8 @@ import org.openqa.selenium.support.PageFactory;
 import com.BaseClass.BaseClass;
 public class LoginPom extends BaseClass {
 	 public LoginPom()
-	{
-		PageFactory.initElements(driver, this);
+	{                                           // initElements method is used to initilization
+		PageFactory.initElements(driver, this); // this is Pointing to the current class objects 
 	}
   @FindBy(xpath="//p[text()='Username : Admin']")
   private WebElement username;
